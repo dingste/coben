@@ -3,7 +3,7 @@ import re
 import shutil
 import subprocess
 import logging
-from utils.template_factory import TemplateFactory
+from coben.utils.template_factory import TemplateFactory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

@@ -1,8 +1,8 @@
 import os
 import logging
-from utils.template_factory import TemplateFactory
-from utils.doc_utils import DocumentationManager
-from utils.git_utils import GitUtils
+from coben.utils.template_factory import TemplateFactory
+from coben.utils.doc_utils import DocumentationManager
+from coben.utils.git_utils import GitUtils
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

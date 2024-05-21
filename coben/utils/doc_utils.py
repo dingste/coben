@@ -1,7 +1,7 @@
 import os
 import subprocess
 import ruamel.yaml
-from utils.template_factory import TemplateFactory  
+from coben.utils.template_factory import TemplateFactory  
 
 yaml = ruamel.yaml.YAML()
 

@@ -1,8 +1,8 @@
 import argparse
-from utils.project_setup import ProjectManager
-from utils.doc_utils import DocumentationManager
-from utils.directory_utils import DirectoryManager
-from utils.puml_utils import UMLManager
+from coben.utils.project_setup import ProjectManager
+from coben.utils.doc_utils import DocumentationManager
+from coben.utils.directory_utils import DirectoryManager
+from coben.utils.puml_utils import UMLManager
 
 def parse_command_line_arguments():
     parser = argparse.ArgumentParser(description="Verwaltet Projekte.")
@@ -98,7 +98,7 @@ class TemplateFactory:
         return self.env.get_template(template_name)
 
 import os
-from utils.template_factory import TemplateFactory
+from coben.utils.template_factory import TemplateFactory
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -132,8 +132,8 @@ class FileUtils:
 
 import os
 import logging
-from utils.file_utils import FileUtils
-from utils.template_factory import TemplateFactory
+from coben.utils.file_utils import FileUtils
+from coben.utils.template_factory import TemplateFactory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -180,8 +180,8 @@ class DirectoryManager:
 
 import os
 import logging
-from utils.template_factory import TemplateFactory
-from utils.doc_utils import DocumentationManager
+from coben.utils.template_factory import TemplateFactory
+from coben.utils.doc_utils import DocumentationManager
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -243,7 +243,7 @@ class ComponentManager:
 import os
 import re
 import logging
-from utils.template_factory import TemplateFactory
+from coben.utils.template_factory import TemplateFactory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -382,7 +382,7 @@ class UMLManager:
 import os
 import subprocess
 import ruamel.yaml
-from utils.template_factory import TemplateFactory  
+from coben.utils.template_factory import TemplateFactory  
 
 yaml = ruamel.yaml.YAML()
 
@@ -459,7 +459,7 @@ import re
 import shutil
 import subprocess
 import logging
-from utils.template_factory import TemplateFactory
+from coben.utils.template_factory import TemplateFactory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

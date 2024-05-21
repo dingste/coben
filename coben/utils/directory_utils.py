@@ -1,7 +1,7 @@
 import os
 import logging
-from utils.file_utils import FileUtils
-from utils.template_factory import TemplateFactory
+from coben.utils.file_utils import FileUtils
+from coben.utils.template_factory import TemplateFactory
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

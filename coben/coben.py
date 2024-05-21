@@ -1,11 +1,11 @@
 import argparse
 import os
-from utils.project_setup import ProjectManager
-from utils.doc_utils import DocumentationManager
-from utils.directory_utils import DirectoryManager
-from utils.puml_utils import UMLManager
-from utils.git_utils import GitUtils
-from utils.component_utils import ComponentManager
+from coben.utils.project_setup import ProjectManager
+from coben.utils.doc_utils import DocumentationManager
+from coben.utils.directory_utils import DirectoryManager
+from coben.utils.puml_utils import UMLManager
+from coben.utils.git_utils import GitUtils
+from coben.utils.component_utils import ComponentManager
 
 def parse_command_line_arguments():
     parser = argparse.ArgumentParser(description="Verwaltet Projekte.")

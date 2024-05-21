@@ -1,11 +1,11 @@
 import os
 import subprocess
 import psutil
-from utils.template_factory import TemplateFactory
-from utils.git_utils import GitUtils
-from utils.component_utils import ComponentManager
-from utils.doc_utils import DocumentationManager
-from utils.puml_utils import UMLManager
+from coben.utils.template_factory import TemplateFactory
+from coben.utils.git_utils import GitUtils
+from coben.utils.component_utils import ComponentManager
+from coben.utils.doc_utils import DocumentationManager
+from coben.utils.puml_utils import UMLManager
 
 class ProjectManager:
     def __init__(self, project_name, platform):
